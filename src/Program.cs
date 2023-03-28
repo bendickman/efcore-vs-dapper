@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using BenchmarkDotNet.Running;
+using EfCoreVsDapper;
+
+Console.WriteLine("Starting benchmarks...");
+
+BenchmarkRunner.Run<Benchmarks>();
+
+Console.WriteLine("Finished benchmarks...");
